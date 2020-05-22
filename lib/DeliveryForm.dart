@@ -5,9 +5,11 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:stripe_payment/stripe_payment.dart';
 import 'package:wadaaro/Model.dart';
+import 'package:wadaaro/credit_card.dart';
 import 'package:wadaaro/test.dart';
 
 import 'API.dart';
+import 'Language.dart';
 import 'Model.dart';
 import 'Success.dart';
 import 'config/constant.dart';
@@ -81,6 +83,11 @@ class DeliveryFormState extends State<DeliveryForm> {
     return new Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
+        leading: Container(
+          child: BackButton(
+            color: Colors.black,
+          ),
+        ),
         title: Text(
           widget.Lang ? "ملخص الطلب" : "Order Summary",
           style: TextStyle(color: Colors.black),
@@ -88,16 +95,7 @@ class DeliveryFormState extends State<DeliveryForm> {
         backgroundColor: Colors.white,
         elevation: 0,
         centerTitle: true,
-        actions: <Widget>[
-          Container(
-            child: BackButton(
-              color: Colors.black,
-            ),
-          ),
-          SizedBox(
-            width: 16,
-          )
-        ],
+
       ),
       body: Directionality(
         textDirection: widget.Lang ? TextDirection.rtl : TextDirection.ltr,
@@ -297,26 +295,34 @@ class DeliveryFormState extends State<DeliveryForm> {
             ),
             MaterialButton(
               onPressed: () {
-                makePayment(cardNumber, month, year, cvvCode,
-                        widget.flowerListModel.price * widget.quantity)
-                    .then((res) {
-                  if (res.statusCode == 200) {
-                    makeTheOrder(
-                        widget.flowerListModel,
-                        widget.type,
-                        nameController.text,
-                        addressController.text,
-                        phoneController.text,
-                        true);
-                  }
-                });
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) =>
+                          CreditCards(widget.Lang)),
+                );
+
+
+//                makePayment(cardNumber, month, year, cvvCode,
+//                        widget.flowerListModel.price * widget.quantity)
+//                    .then((res) {
+//                  if (res.statusCode == 200) {
+//                    makeTheOrder(
+//                        widget.flowerListModel,
+//                        widget.type,
+//                        nameController.text,
+//                        addressController.text,
+//                        phoneController.text,
+//                        true);
+//                  }
+//                });
               },
               color: Colors.white,
               height: 48,
               minWidth: MediaQuery.of(context).size.width - 64,
               elevation: 5,
               child: Text(
-                widget.Lang ? "التالى" : "Make Payement",
+                widget.Lang ? "قم بالدفع" : "Make Payement",
                 style: TextStyle(fontSize: 16),
               ),
               shape: RoundedRectangleBorder(
