@@ -1,0 +1,201 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.wadaaro"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+9        android:targetSdkVersion="28" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->C:\Users\Riday\Downloads\flutterproject\FlowerDesign\android\app\src\main\AndroidManifest.xml:9:5-67
+14-->C:\Users\Riday\Downloads\flutterproject\FlowerDesign\android\app\src\main\AndroidManifest.xml:9:22-64
+15    <!-- Include required permissions for Google Maps API to run. -->
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+16-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:23:22-76
+17
+18    <uses-feature
+18-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+19        android:glEsVersion="0x00020000"
+19-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+20        android:required="true" />
+20-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+21
+22    <application
+22-->C:\Users\Riday\Downloads\flutterproject\FlowerDesign\android\app\src\main\AndroidManifest.xml:10:5-33:19
+23        android:name="io.flutter.app.FlutterApplication"
+23-->C:\Users\Riday\Downloads\flutterproject\FlowerDesign\android\app\src\main\AndroidManifest.xml:11:9-57
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.1.0] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:18-86
+25        android:debuggable="true"
+26        android:icon="@drawable/icon"
+26-->C:\Users\Riday\Downloads\flutterproject\FlowerDesign\android\app\src\main\AndroidManifest.xml:13:9-38
+27        android:label="99 Warda"
+27-->C:\Users\Riday\Downloads\flutterproject\FlowerDesign\android\app\src\main\AndroidManifest.xml:12:9-33
+28        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+28-->[:stripe_payment] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:11:18-74
+29        <activity
+29-->C:\Users\Riday\Downloads\flutterproject\FlowerDesign\android\app\src\main\AndroidManifest.xml:14:9-32:20
+30            android:name="com.example.wadaaro.MainActivity"
+30-->C:\Users\Riday\Downloads\flutterproject\FlowerDesign\android\app\src\main\AndroidManifest.xml:15:13-41
+31            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+31-->C:\Users\Riday\Downloads\flutterproject\FlowerDesign\android\app\src\main\AndroidManifest.xml:18:13-144
+32            android:hardwareAccelerated="true"
+32-->C:\Users\Riday\Downloads\flutterproject\FlowerDesign\android\app\src\main\AndroidManifest.xml:19:13-47
+33            android:launchMode="singleTop"
+33-->C:\Users\Riday\Downloads\flutterproject\FlowerDesign\android\app\src\main\AndroidManifest.xml:16:13-43
+34            android:theme="@style/LaunchTheme"
+34-->C:\Users\Riday\Downloads\flutterproject\FlowerDesign\android\app\src\main\AndroidManifest.xml:17:13-47
+35            android:windowSoftInputMode="adjustResize" >
+35-->C:\Users\Riday\Downloads\flutterproject\FlowerDesign\android\app\src\main\AndroidManifest.xml:20:13-55
+36
+37            <!--
+38                 This keeps the window background of the activity showing
+39                 until Flutter renders its first frame. It can be removed if
+40                 there is no splash screen (such as the default splash screen
+41                 defined in @style/LaunchTheme).
+42            -->
+43            <meta-data
+43-->C:\Users\Riday\Downloads\flutterproject\FlowerDesign\android\app\src\main\AndroidManifest.xml:25:13-27:40
+44                android:name="io.flutter.app.android.SplashScreenUntilFirstFrame"
+44-->C:\Users\Riday\Downloads\flutterproject\FlowerDesign\android\app\src\main\AndroidManifest.xml:26:17-82
+45                android:value="true" />
+45-->C:\Users\Riday\Downloads\flutterproject\FlowerDesign\android\app\src\main\AndroidManifest.xml:27:17-37
+46
+47            <intent-filter>
+47-->C:\Users\Riday\Downloads\flutterproject\FlowerDesign\android\app\src\main\AndroidManifest.xml:28:13-31:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->C:\Users\Riday\Downloads\flutterproject\FlowerDesign\android\app\src\main\AndroidManifest.xml:29:17-68
+48-->C:\Users\Riday\Downloads\flutterproject\FlowerDesign\android\app\src\main\AndroidManifest.xml:29:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->C:\Users\Riday\Downloads\flutterproject\FlowerDesign\android\app\src\main\AndroidManifest.xml:30:17-76
+50-->C:\Users\Riday\Downloads\flutterproject\FlowerDesign\android\app\src\main\AndroidManifest.xml:30:27-74
+51            </intent-filter>
+52        </activity>
+53
+54        <meta-data
+54-->[:stripe_payment] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-14:36
+55            android:name="com.google.android.gms.wallet.api.enabled"
+55-->[:stripe_payment] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-69
+56            android:value="true" />
+56-->[:stripe_payment] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-33
+57
+58        <activity
+58-->[:stripe_payment] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-20:75
+59            android:name="com.gettipsi.stripe.OpenBrowserActivity"
+59-->[:stripe_payment] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-67
+60            android:exported="false"
+60-->[:stripe_payment] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-37
+61            android:launchMode="singleTask"
+61-->[:stripe_payment] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-44
+62            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+62-->[:stripe_payment] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-72
+63        <activity
+63-->[:stripe_payment] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:21:9-34:20
+64            android:name="com.gettipsi.stripe.RedirectUriReceiver"
+64-->[:stripe_payment] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:22:13-67
+65            android:exported="true"
+65-->[:stripe_payment] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:23:13-36
+66            android:launchMode="singleTask"
+66-->[:stripe_payment] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:24:13-44
+67            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+67-->[:stripe_payment] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-83
+68            <intent-filter>
+68-->[:stripe_payment] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-33:29
+69                <action android:name="android.intent.action.VIEW" />
+69-->[:stripe_payment] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:27:17-69
+69-->[:stripe_payment] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:27:25-66
+70
+71                <category android:name="android.intent.category.DEFAULT" />
+71-->[:stripe_payment] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:29:17-76
+71-->[:stripe_payment] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:29:27-73
+72                <category android:name="android.intent.category.BROWSABLE" />
+72-->[:stripe_payment] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:30:17-78
+72-->[:stripe_payment] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:30:27-75
+73
+74                <data android:scheme="example" />
+74-->[:stripe_payment] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:32:17-50
+74-->[:stripe_payment] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\stripe_payment\intermediates\library_manifest\debug\AndroidManifest.xml:32:23-47
+75            </intent-filter>
+76        </activity>
+77        <activity
+77-->[:url_launcher] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-11:74
+78            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+78-->[:url_launcher] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-74
+79            android:exported="false"
+79-->[:url_launcher] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-37
+80            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+80-->[:url_launcher] C:\Users\Riday\Downloads\flutterproject\FlowerDesign\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-71
+81        <activity
+81-->[com.stripe:stripe-android:10.4.6] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\56e48ea8f7db45aeb9acf5812b35c0bc\jetified-stripe-android-10.4.6\AndroidManifest.xml:12:9-14:57
+82            android:name="com.stripe.android.view.AddPaymentMethodActivity"
+82-->[com.stripe:stripe-android:10.4.6] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\56e48ea8f7db45aeb9acf5812b35c0bc\jetified-stripe-android-10.4.6\AndroidManifest.xml:13:13-76
+83            android:theme="@style/StripeDefaultTheme" />
+83-->[com.stripe:stripe-android:10.4.6] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\56e48ea8f7db45aeb9acf5812b35c0bc\jetified-stripe-android-10.4.6\AndroidManifest.xml:14:13-54
+84        <activity
+84-->[com.stripe:stripe-android:10.4.6] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\56e48ea8f7db45aeb9acf5812b35c0bc\jetified-stripe-android-10.4.6\AndroidManifest.xml:15:9-17:57
+85            android:name="com.stripe.android.view.PaymentMethodsActivity"
+85-->[com.stripe:stripe-android:10.4.6] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\56e48ea8f7db45aeb9acf5812b35c0bc\jetified-stripe-android-10.4.6\AndroidManifest.xml:16:13-74
+86            android:theme="@style/StripeDefaultTheme" />
+86-->[com.stripe:stripe-android:10.4.6] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\56e48ea8f7db45aeb9acf5812b35c0bc\jetified-stripe-android-10.4.6\AndroidManifest.xml:17:13-54
+87        <activity
+87-->[com.stripe:stripe-android:10.4.6] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\56e48ea8f7db45aeb9acf5812b35c0bc\jetified-stripe-android-10.4.6\AndroidManifest.xml:18:9-20:57
+88            android:name="com.stripe.android.view.PaymentFlowActivity"
+88-->[com.stripe:stripe-android:10.4.6] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\56e48ea8f7db45aeb9acf5812b35c0bc\jetified-stripe-android-10.4.6\AndroidManifest.xml:19:13-71
+89            android:theme="@style/StripeDefaultTheme" />
+89-->[com.stripe:stripe-android:10.4.6] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\56e48ea8f7db45aeb9acf5812b35c0bc\jetified-stripe-android-10.4.6\AndroidManifest.xml:20:13-54
+90        <activity
+90-->[com.stripe:stripe-android:10.4.6] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\56e48ea8f7db45aeb9acf5812b35c0bc\jetified-stripe-android-10.4.6\AndroidManifest.xml:21:9-23:57
+91            android:name="com.stripe.android.view.PaymentAuthWebViewActivity"
+91-->[com.stripe:stripe-android:10.4.6] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\56e48ea8f7db45aeb9acf5812b35c0bc\jetified-stripe-android-10.4.6\AndroidManifest.xml:22:13-78
+92            android:theme="@style/StripeDefaultTheme" />
+92-->[com.stripe:stripe-android:10.4.6] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\56e48ea8f7db45aeb9acf5812b35c0bc\jetified-stripe-android-10.4.6\AndroidManifest.xml:23:13-54
+93        <activity
+93-->[com.stripe:stripe-android:10.4.6] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\56e48ea8f7db45aeb9acf5812b35c0bc\jetified-stripe-android-10.4.6\AndroidManifest.xml:24:9-26:57
+94            android:name="com.stripe.android.view.PaymentRelayActivity"
+94-->[com.stripe:stripe-android:10.4.6] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\56e48ea8f7db45aeb9acf5812b35c0bc\jetified-stripe-android-10.4.6\AndroidManifest.xml:25:13-72
+95            android:theme="@style/StripeDefaultTheme" />
+95-->[com.stripe:stripe-android:10.4.6] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\56e48ea8f7db45aeb9acf5812b35c0bc\jetified-stripe-android-10.4.6\AndroidManifest.xml:26:13-54
+96        <activity
+96-->[com.stripe:stripe-3ds2-android:1.2.2] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\bf51ce8ded7948249b4ab685cd872e99\jetified-stripe-3ds2-android-1.2.2\AndroidManifest.xml:12:9-14:54
+97            android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity"
+97-->[com.stripe:stripe-3ds2-android:1.2.2] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\bf51ce8ded7948249b4ab685cd872e99\jetified-stripe-3ds2-android-1.2.2\AndroidManifest.xml:13:13-81
+98            android:theme="@style/Stripe3DS2Theme" />
+98-->[com.stripe:stripe-3ds2-android:1.2.2] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\bf51ce8ded7948249b4ab685cd872e99\jetified-stripe-3ds2-android-1.2.2\AndroidManifest.xml:14:13-51
+99        <activity
+99-->[com.stripe:stripe-3ds2-android:1.2.2] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\bf51ce8ded7948249b4ab685cd872e99\jetified-stripe-3ds2-android-1.2.2\AndroidManifest.xml:15:9-17:54
+100            android:name="com.stripe.android.stripe3ds2.views.ChallengeProgressDialogActivity"
+100-->[com.stripe:stripe-3ds2-android:1.2.2] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\bf51ce8ded7948249b4ab685cd872e99\jetified-stripe-3ds2-android-1.2.2\AndroidManifest.xml:16:13-95
+101            android:theme="@style/Stripe3DS2Theme" /> <!-- Needs to be explicitly declared on P+ -->
+101-->[com.stripe:stripe-3ds2-android:1.2.2] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\bf51ce8ded7948249b4ab685cd872e99\jetified-stripe-3ds2-android-1.2.2\AndroidManifest.xml:17:13-51
+102        <uses-library
+102-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+103            android:name="org.apache.http.legacy"
+103-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+104            android:required="false" />
+104-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\6b9b7fc1ad481537ed0a66d62976ec46\play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+105
+106        <activity
+106-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+107            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+107-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+108            android:exported="false"
+108-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+109            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+109-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\5ac9ad6f13ea0190a3570ea7a43d9f59\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+110
+111        <meta-data
+111-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\f37b3bcf2b5f28b1f05831a9d1f3e1c7\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+112            android:name="com.google.android.gms.version"
+112-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\f37b3bcf2b5f28b1f05831a9d1f3e1c7\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+113            android:value="@integer/google_play_services_version" />
+113-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Riday\.gradle\caches\transforms-2\files-2.1\f37b3bcf2b5f28b1f05831a9d1f3e1c7\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+114    </application>
+115
+116</manifest>
