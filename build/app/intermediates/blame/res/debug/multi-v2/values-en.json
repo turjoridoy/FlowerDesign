@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Riday\\Downloads\\flutterproject\\FlowerDesign\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en\\values-en.xml",
+            "outputFile": "/Users/tashfik/Flutter/Codecanyon/FlowerDesign/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-en/values-en.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Riday\\.gradle\\caches\\transforms-2\\files-2.1\\bf51ce8ded7948249b4ab685cd872e99\\jetified-stripe-3ds2-android-1.2.2\\res\\values-en\\values-en.xml",
+                    "source": "/Users/tashfik/.gradle/caches/transforms-2/files-2.1/5a1cd91374c92347beabc56c87d21090/jetified-stripe-3ds2-android-1.2.2/res/values-en/values-en.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

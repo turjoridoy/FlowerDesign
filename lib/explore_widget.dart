@@ -554,7 +554,7 @@ class ExploreWidgetState extends State<ExploreWidget> {
                                                 height: 8,
                                               ),
                                               Text(
-                                                "${_listFlower[i].price} IQD",
+                                                "${_listFlower[i].price} \$",
                                                 style: TextStyle(
                                                     fontWeight: FontWeight.w500,
                                                     fontSize: 16),
@@ -720,7 +720,7 @@ class ExploreWidgetState extends State<ExploreWidget> {
                                                       height: 8,
                                                     ),
                                                     Text(
-                                                      "${_listFlower[i + 1].price} IQD",
+                                                      "${_listFlower[i + 1].price} \$",
                                                       style: TextStyle(
                                                           fontWeight:
                                                               FontWeight.w500,

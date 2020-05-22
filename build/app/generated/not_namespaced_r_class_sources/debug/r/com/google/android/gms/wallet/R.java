@@ -51,44 +51,44 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int android_pay = 0x7f080045;
-        public static final int android_pay_dark = 0x7f080046;
-        public static final int android_pay_light = 0x7f080047;
-        public static final int android_pay_light_with_border = 0x7f080048;
-        public static final int book_now = 0x7f080050;
-        public static final int buyButton = 0x7f080055;
-        public static final int buy_now = 0x7f080056;
-        public static final int buy_with = 0x7f080057;
-        public static final int buy_with_google = 0x7f080058;
-        public static final int classic = 0x7f080067;
-        public static final int dark = 0x7f08007f;
-        public static final int donate_with = 0x7f08008b;
-        public static final int donate_with_google = 0x7f08008c;
-        public static final int googleMaterial2 = 0x7f0800ad;
-        public static final int google_wallet_classic = 0x7f0800ae;
-        public static final int google_wallet_grayscale = 0x7f0800af;
-        public static final int google_wallet_monochrome = 0x7f0800b0;
-        public static final int grayscale = 0x7f0800b1;
-        public static final int holo_dark = 0x7f0800b3;
-        public static final int holo_light = 0x7f0800b4;
-        public static final int light = 0x7f0800cb;
-        public static final int logo_only = 0x7f0800d0;
-        public static final int match_parent = 0x7f0800d6;
-        public static final int material = 0x7f0800d7;
-        public static final int monochrome = 0x7f0800dc;
-        public static final int none = 0x7f0800e3;
-        public static final int production = 0x7f0800f3;
-        public static final int sandbox = 0x7f0800fd;
-        public static final int selectionDetails = 0x7f080116;
-        public static final int slide = 0x7f08011d;
-        public static final int strict_sandbox = 0x7f08012c;
-        public static final int test = 0x7f080139;
-        public static final int wrap_content = 0x7f080166;
+        public static final int android_pay = 0x7f080024;
+        public static final int android_pay_dark = 0x7f080025;
+        public static final int android_pay_light = 0x7f080026;
+        public static final int android_pay_light_with_border = 0x7f080027;
+        public static final int book_now = 0x7f08002f;
+        public static final int buyButton = 0x7f080034;
+        public static final int buy_now = 0x7f080035;
+        public static final int buy_with = 0x7f080036;
+        public static final int buy_with_google = 0x7f080037;
+        public static final int classic = 0x7f080046;
+        public static final int dark = 0x7f08005e;
+        public static final int donate_with = 0x7f080069;
+        public static final int donate_with_google = 0x7f08006a;
+        public static final int googleMaterial2 = 0x7f08008b;
+        public static final int google_wallet_classic = 0x7f08008c;
+        public static final int google_wallet_grayscale = 0x7f08008d;
+        public static final int google_wallet_monochrome = 0x7f08008e;
+        public static final int grayscale = 0x7f08008f;
+        public static final int holo_dark = 0x7f080091;
+        public static final int holo_light = 0x7f080092;
+        public static final int light = 0x7f0800a9;
+        public static final int logo_only = 0x7f0800ae;
+        public static final int match_parent = 0x7f0800b4;
+        public static final int material = 0x7f0800b5;
+        public static final int monochrome = 0x7f0800ba;
+        public static final int none = 0x7f0800c1;
+        public static final int production = 0x7f0800d1;
+        public static final int sandbox = 0x7f0800db;
+        public static final int selectionDetails = 0x7f0800f4;
+        public static final int slide = 0x7f0800fb;
+        public static final int strict_sandbox = 0x7f08010a;
+        public static final int test = 0x7f080112;
+        public static final int wrap_content = 0x7f08013f;
     }
     public static final class layout {
         private layout() {}
 
-        public static final int wallet_test_layout = 0x7f0b005f;
+        public static final int wallet_test_layout = 0x7f0b005e;
     }
     public static final class string {
         private string() {}

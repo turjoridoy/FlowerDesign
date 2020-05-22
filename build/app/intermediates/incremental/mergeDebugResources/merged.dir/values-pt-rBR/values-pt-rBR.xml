@@ -57,6 +57,6 @@
     <string name="hzv_header_label">Finalização de compra segura</string>
     <string name="processing">Processando\u2026</string>
     <string msgid="146198913615257606" name="search_menu_title">"Pesquisar"</string>
-    <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="7988687684186075107" name="status_bar_notification_info_overflow">"999+"</string>
     <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"Comprar com o Google"</string>
 </resources>

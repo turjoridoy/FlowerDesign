@@ -192,7 +192,7 @@ class TrackingHistoryState extends State<Orders> {
                                         width: 10,
                                       ),
                                       Text(
-                                        '${entry[index].product.price} IQD',
+                                        '${entry[index].product.price} \$',
                                         style: TextStyle(fontSize: 10),
                                       )
                                     ],

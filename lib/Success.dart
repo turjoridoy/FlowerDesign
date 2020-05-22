@@ -209,7 +209,7 @@ class FlowerCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
                   Text(
-                    '25,000 IQD',
+                    '25,000 \$',
                     style: TextStyle(fontWeight: FontWeight.w500, fontSize: 16),
                   ),
                   SizedBox(
