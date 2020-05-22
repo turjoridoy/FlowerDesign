@@ -10,7 +10,7 @@ import 'package:wadaaro/test.dart';
 import 'API.dart';
 import 'Model.dart';
 import 'Success.dart';
-import 'constant.dart';
+import 'config/constant.dart';
 
 class DeliveryForm extends StatefulWidget {
   static String tag = 'flower_details';

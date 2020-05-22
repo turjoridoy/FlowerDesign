@@ -7,7 +7,7 @@ import 'package:http/http.dart' as http;
 
 import 'MaterialButton.dart';
 import 'Model.dart';
-import 'constant.dart';
+import 'config/constant.dart';
 
 class SignUp extends StatefulWidget {
   static String tag = 'as';

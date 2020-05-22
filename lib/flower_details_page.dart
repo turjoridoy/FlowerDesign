@@ -5,7 +5,7 @@ import 'package:wadaaro/Choose.dart';
 import 'package:wadaaro/Model.dart';
 
 import 'LogIn.dart';
-import 'constant.dart';
+import 'config/constant.dart';
 
 class FlowerDetails extends StatefulWidget {
   static String tag = 'flower_details';

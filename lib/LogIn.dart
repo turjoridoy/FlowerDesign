@@ -11,7 +11,7 @@ import 'package:wadaaro/test.dart';
 
 import 'MaterialButton.dart';
 import 'Model.dart';
-import 'constant.dart';
+import 'config/constant.dart';
 
 class LogIn extends StatefulWidget {
   static String tag = 'after_splash';

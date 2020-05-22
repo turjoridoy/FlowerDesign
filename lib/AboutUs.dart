@@ -14,7 +14,7 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:simple_moment/simple_moment.dart';
 
-import 'constant.dart';
+import 'config/constant.dart';
 class AboutUs extends StatefulWidget {
   static String tag = 'after_splash';
   Information info;

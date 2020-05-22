@@ -7,7 +7,7 @@ import 'package:http/http.dart' as http;
 import 'package:intl/intl.dart' as ints;
 import 'package:wadaaro/Model.dart';
 
-import 'constant.dart';
+import 'config/constant.dart';
 
 class Orders extends StatefulWidget {
   static String tag = 'alarm_list';
