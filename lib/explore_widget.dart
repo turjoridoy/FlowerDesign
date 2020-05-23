@@ -262,8 +262,8 @@ class ExploreWidgetState extends State<ExploreWidget> {
                 ),
                 child: Icon(
                   Icons.search,
-                  color: Colors.blueAccent,
-                  size: 30,
+                  size: 25,
+                  color: Colors.black,
                 ),
               ),
               onTap: () {
@@ -341,8 +341,8 @@ class ExploreWidgetState extends State<ExploreWidget> {
                 width: 40,
                 child: Icon(
                   Icons.more_horiz,
-                  color: Colors.grey,
-                  size: 35,
+                  size: 25,
+                  color: Colors.black,
                 ),
               ),
             ),
@@ -360,14 +360,13 @@ class ExploreWidgetState extends State<ExploreWidget> {
             height: 0,
           ),
           Container(
-            height: 300,
             color: Colors.white,
             padding: EdgeInsets.all(16.0),
             child: Column(
               children: <Widget>[
 
                 SizedBox(
-                  height: 20,
+                  height: 10,
                   width: 20,
                 ),
                 Row(
@@ -448,6 +447,10 @@ class ExploreWidgetState extends State<ExploreWidget> {
                 ? Container()
                 : Column(
                     children: <Widget>[
+
+                      SizedBox(
+                        height: 10,
+                      ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: <Widget>[
@@ -459,6 +462,9 @@ class ExploreWidgetState extends State<ExploreWidget> {
                             ),
                           ),
                         ],
+                      ),
+                      SizedBox(
+                        height: 10,
                       ),
                       for (int i = 0;
                           i <= (_listFlower.length / 2).floor();
