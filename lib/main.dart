@@ -5,6 +5,7 @@ import 'package:wadaaro/login_page.dart';
 import 'package:wadaaro/test.dart';
 
 import 'LogIn.dart';
+import 'SplashScreen.dart';
 
 void main() => runApp(MyApp());
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         canvasColor: Colors.transparent,),
-      home: SafeArea(child: FlowerPage()),
+      home: SafeArea(child: SplashScreen()),
 
     );
   }

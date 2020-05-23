@@ -30,104 +30,110 @@ class FlowerPageState extends State<FlowerPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      body: Directionality(
-        textDirection: Lang ? TextDirection.rtl : TextDirection.ltr,
-        child: _children[_page],
-      ),
-      bottomNavigationBar: Material(
-        shadowColor: Colors.black,
-        elevation: 10,
-        child: CurvedNavigationBar(
-          key: _bottomNavigationKey,
-          index: 0,
-          height: 70.0,
-          items: <Widget>[
-            Column(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: <Widget>[
-                Image.asset(
-                  'images/explore.png',
-                  height: 30,
-                  width: 30,
-                ),
-                SizedBox(
-                  height: 8,
-                ),
-                Text(Lang ? "أصنعها" : 'Make it'),
-                SizedBox(
-                  height: 8,
-                )
-              ],
-            ),
-            Container(
-//            color: Colors.green,
-              height: 90,
-              constraints: BoxConstraints(minHeight: 90),
-              child: Column(
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Colors.white,
+        body: Directionality(
+          textDirection: Lang ? TextDirection.rtl : TextDirection.ltr,
+          child: _children[_page],
+        ),
+        bottomNavigationBar: Material(
+          shadowColor: Colors.black,
+          elevation: 10,
+          child: CurvedNavigationBar(
+            key: _bottomNavigationKey,
+            index: 0,
+            height: 70.0,
+            items: <Widget>[
+              Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
-                  Container(
+                  Image.asset(
+                    'images/explore.png',
                     height: 30,
                     width: 30,
-                    color: Colors.red,
                   ),
-                  Lang
-                      ? SizedBox(
-                          height: 10,
-                        )
-                      : SizedBox(
-                          height: 20,
-                        ),
-                  Text(Lang ? "يكتشف" : 'Explore'),
+                  SizedBox(
+                    height: 8,
+                  ),
+                  Text(Lang ? "أصنعها" : 'Make it'),
                   SizedBox(
                     height: 8,
                   )
                 ],
               ),
-            ),
-            Column(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: <Widget>[
-                Icon(Icons.menu, color: Colors.grey, size: 30),
-                SizedBox(
-                  height: 8,
+              Container(
+//            color: Colors.green,
+                height: 90,
+                constraints: BoxConstraints(minHeight: 90),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: <Widget>[
+                    Container(
+                      height: 30,
+                      width: 30,
+                      color: Colors.red,
+                    ),
+                    Lang
+                        ? SizedBox(
+                      height: 10,
+                    )
+                        : SizedBox(
+                      height: 20,
+                    ),
+                    Text(Lang ? "يكتشف" : 'Explore'),
+                    SizedBox(
+                      height: 8,
+                    )
+                  ],
                 ),
-                Text(Lang ? "طلب" : 'Orders'),
-                SizedBox(
-                  height: 8,
-                )
-              ],
-            ),
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: <Widget>[
+                  Icon(
+                    Icons.menu,
+                    color: Color(0xFF6B70DE),
+                    size: 35,
+                  ),
+                  SizedBox(
+                    height: 8,
+                  ),
+                  Text(Lang ? "طلب" : 'Orders'),
+                  SizedBox(
+                    height: 8,
+                  )
+                ],
+              ),
 //          Image.asset(
 //            'images/explore.png',
 //            height: 10,
 //            width: 10,
 //          ),
-          ],
-          color: Colors.white,
-          buttonBackgroundColor: Colors.transparent,
-          backgroundColor: Colors.white,
-          onTap: (index) {
-            if (index == 2) {
-              if (user == null) {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => LogIn(),
-                    ));
+            ],
+            color: Colors.white,
+            buttonBackgroundColor: Colors.transparent,
+            backgroundColor: Colors.white,
+            onTap: (index) {
+              if (index == 2) {
+                if (user == null) {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => LogIn(),
+                      ));
+                } else {
+                  setState(() {
+                    _page = index;
+                  });
+                }
               } else {
                 setState(() {
                   _page = index;
                 });
               }
-            } else {
-              setState(() {
-                _page = index;
-              });
-            }
-          },
+            },
+          ),
         ),
       ),
     );

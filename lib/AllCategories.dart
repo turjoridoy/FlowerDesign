@@ -92,7 +92,8 @@ class AllCategoriesState extends State<AllCategories> {
         )
             : Container(
           width: MediaQuery.of(context).size.width,
-          padding: EdgeInsets.all(8),
+          padding: EdgeInsets.all(12),
+          alignment: Alignment.topCenter,
           child: GridView.builder(
             scrollDirection: Axis.vertical,
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
@@ -124,7 +125,7 @@ class AllCategoriesState extends State<AllCategories> {
         Container(
           height: 90,
           margin: EdgeInsets.only(top: 4),
-          width: ((MediaQuery.of(context).size.width - 20) / 2) - 4,
+          width: ((MediaQuery.of(context).size.width - 20) / 2) - 10,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.all(Radius.circular(8)),
               image: DecorationImage(

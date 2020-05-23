@@ -80,13 +80,7 @@ class CategoryListState extends State<CategoryList> {
           style: TextStyle(color: Colors.black87),
         ),
       ),
-      body:
-
-
-
-
-
-      Directionality(
+      body: Directionality(
         textDirection:widget.Language?  TextDirection.rtl:TextDirection.ltr,
         child:  _listCategory == null
             ? Center(
