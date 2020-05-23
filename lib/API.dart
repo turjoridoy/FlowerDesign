@@ -3,7 +3,7 @@ import 'dart:convert' as convert;
 import 'package:http/http.dart' as http;
 import 'package:wadaaro/Model.dart';
 
-import 'constant.dart';
+import 'config/constant.dart';
 
 Future<List<ProductListModel>> getAllFlowers() async {
   var client = new http.Client();

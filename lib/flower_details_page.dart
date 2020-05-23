@@ -5,7 +5,7 @@ import 'package:wadaaro/Choose.dart';
 import 'package:wadaaro/Model.dart';
 
 import 'LogIn.dart';
-import 'constant.dart';
+import 'config/constant.dart';
 
 class FlowerDetails extends StatefulWidget {
   static String tag = 'flower_details';
@@ -296,8 +296,8 @@ class FlowerDetailsState extends State<FlowerDetails> {
                 ),
                 Text(
                   isArabic
-                      ? '\n${quantity * widget.flowerListModel.price} IQD  مجموع'
-                      : "Total\n${quantity * widget.flowerListModel.price} IQD",
+                      ? '\n${quantity * widget.flowerListModel.price} \$  مجموع'
+                      : "Total\n${quantity * widget.flowerListModel.price} \$",
                   style: TextStyle(color: Colors.white, fontSize: 22),
                 )
               ],

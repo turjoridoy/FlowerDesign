@@ -4,7 +4,7 @@ import 'package:wadaaro/API.dart';
 import 'package:wadaaro/test.dart';
 
 import 'Model.dart';
-import 'constant.dart';
+import 'config/constant.dart';
 import 'flower_details_page.dart';
 import 'navigation_bar.dart';
 
@@ -242,7 +242,7 @@ class FlowerSearchState extends State<FlowerSearch> {
                                                               height: 8,
                                                             ),
                                                             Text(
-                                                              "${_list[i].price} IQD",
+                                                              "${_list[i].price} \$",
                                                               style: TextStyle(
                                                                   fontWeight:
                                                                       FontWeight
@@ -444,7 +444,7 @@ class FlowerSearchState extends State<FlowerSearch> {
                                                                     height: 8,
                                                                   ),
                                                                   Text(
-                                                                    "${_list[i + 1].price} IQD",
+                                                                    "${_list[i + 1].price} \$",
                                                                     style: TextStyle(
                                                                         fontWeight:
                                                                             FontWeight

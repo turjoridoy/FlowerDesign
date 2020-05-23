@@ -14,7 +14,7 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:simple_moment/simple_moment.dart';
 
-import 'constant.dart';
+import 'config/constant.dart';
 import 'package:url_launcher/url_launcher.dart';
 class ContactUs extends StatefulWidget {
   static String tag = 'after_splash';
@@ -51,6 +51,15 @@ class ContactUsState extends State<ContactUs> {
         .bodyBytes;
 
     return Information.fromJsonList(json.decode(utf8.decode(responseBody)))[0];
+  }
+
+  Future<void> openCall() async {
+    String googleUrl = 'tel://${widget.info.phone}';
+    if (await canLaunch(googleUrl)) {
+      await launch(googleUrl);
+    } else {
+      throw 'Could not open the map.';
+    }
   }
   @override
   Widget build(BuildContext context) {
@@ -182,7 +191,7 @@ void _AlertBox(message, context) {
 }
 
   Future<void> openMap() async {
-String googleUrl = 'https://goo.gl/maps/4jSY47QwSTZVaeu3A';
+String googleUrl = 'https://goo.gl/maps/eFi8a2QQ4gDs93Ng7';
 if (await canLaunch(googleUrl)) {
 await launch(googleUrl);
 } else {
@@ -190,13 +199,6 @@ throw 'Could not open the map.';
 }
 }
 
-Future<void> openCall() async {
-  String googleUrl = 'tel://+9647514904999';
-  if (await canLaunch(googleUrl)) {
-    await launch(googleUrl);
-  } else {
-    throw 'Could not open the map.';
-  }
-}
+
 
 DateTime currentBackPressTime;
