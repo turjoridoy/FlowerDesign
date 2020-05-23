@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "353670401198",
+    "firebase_url": "https://gogroccery.firebaseio.com",
+    "project_id": "gogroccery",
+    "storage_bucket": "gogroccery.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353670401198:android:51eb9f69b1e2403334313f",
+        "android_client_info": {
+          "package_name": "com.example.wadaaro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353670401198-j1ga3khirp6aplf8lvv6f5bu8m8pp8qv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDulpiMW0CET32k2KoWVwOlRUjoKPvITU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353670401198-j1ga3khirp6aplf8lvv6f5bu8m8pp8qv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

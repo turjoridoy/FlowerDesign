@@ -29,8 +29,7 @@ dependencies:
   carousel_slider: ^1.3.0
   shared_preferences: ^0.5.4+8
   http:
-  flutter_credit_card: ^0.1.3
-  stripe_payment: ^1.0.7
+  firebase_messaging: ^6.0.15
   toast: ^0.1.5
   url_launcher: ^5.4.1
   awesome_card: ^1.1.0

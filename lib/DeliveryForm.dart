@@ -3,7 +3,6 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:stripe_payment/stripe_payment.dart';
 import 'package:wadaaro/Model.dart';
 import 'package:wadaaro/credit_card.dart';
 import 'package:wadaaro/test.dart';
@@ -23,16 +22,7 @@ class DeliveryForm extends StatefulWidget {
   bool Lang = true;
   User user = null;
 
-  //stripe
 
-  Token _paymentToken;
-  PaymentMethod _paymentMethod;
-  String _error;
-  final String _currentSecret = null; //set this yourself, e.g using curl
-  PaymentIntentResult _paymentIntent;
-  Source _source;
-
-  //stripe end
 
   DeliveryForm(this.flowerListModel, this.quantity, this.type, this.Lang);
 
